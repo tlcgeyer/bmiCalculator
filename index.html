@@ -12,20 +12,24 @@
 </head>
 <body>
     <h2 id="h2">Body Mass Index Calculator</h2>
-
     <form class="form">
         <div class="container">
             <div>
-                <input type="text" class="text-input" id="age" <p class="para1">Age</p>> 
+                <input type="text" class="text-input" id="age" placeholder="Age"> 
             </div>
             <div>
-                <input type="text" class="text-input" id="weight" <p class="para2">Weight</p>> 
+                <input type="text" class="text-input" id="weight" placeholder="Weight"> 
             </div>
             <div>
-                <button type="button">Submit</button>
+                <button type="button" onclick="calculateBMI()">Calculate BMI</button>
             </div>
         </div>
     </form>
+
+    <div id="result-container" class="container">
+        <p id="result" class="result"></p>
+        <p id="bmi-range" class="result"></p>
+    </div>
     <script src="script/code.js"></script>
 </body>
 </html>
